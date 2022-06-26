@@ -30,31 +30,31 @@
 C# предоставляет прямой способ записи чисел из двоичного формата, для этого нужно записать `0b` и само двоичное число.
 
 ```csharp
-    Console.WriteLine(0b101);
-        // Вывод: 5
+Console.WriteLine(0b101);
+    // Вывод: 5
 ```
 
 Также можно записывать числа в шестнадцатеричной системе счисления.
 
 ```csharp
-    Console.WriteLine(0xff);
-        // Вывод: 255
+Console.WriteLine(0xff);
+    // Вывод: 255
 ```
 
 Для хранения чисел C# предоставляет уйму различных типов. Самый распространённый это `int`, который хранит в себе 32 бита, где первый бит отводится под знак, можно посчитать максимальное значение:
 
 ```csharp
-    int n = 0b01111111111111111111111111111111;
-    Console.WriteLine(n);
-        // Вывод: 2147483647
+int n = 0b01111111111111111111111111111111;
+Console.WriteLine(n);
+    // Вывод: 2147483647
 ```
 
 Также есть его аналог без знака `uint`, посчитаем максимальное значение:
 
 ```csharp
-    uint n = 0b11111111111111111111111111111111;
-    Console.WriteLine(n);
-        // Вывод: 4294967295
+uint n = 0b11111111111111111111111111111111;
+Console.WriteLine(n);
+    // Вывод: 4294967295
 ```
 
 
@@ -65,17 +65,17 @@ C# предоставляет прямой способ записи чисел 
 Для хранения чисел с дробной запятой нам предоставляют два типа: `float` (32 бита) и `double` (64 бита). По умолчанию каждому дробному числу в C# присваивается тип double, если мы явно не укажем другой тип, например:
 
 ```csharp
-    var d = 0.4;
-    Console.WriteLine(d.GetType());
-        // Вывод: System.Double
+var d = 0.4;
+Console.WriteLine(d.GetType());
+    // Вывод: System.Double
 ```
 
 Для того чтобы сделать это типом float нам нужно написать в конце постфикс `f`, например:
 
 ```csharp
-    var d = 0.4f;
-    Console.WriteLine(d.GetType());
-        // Вывод: System.Single (аналог float, но в спецификации .net, по сути одно и тоже)
+var d = 0.4f;
+Console.WriteLine(d.GetType());
+    // Вывод: System.Single (аналог float, но в спецификации .net, по сути одно и тоже)
 ```
 
 ---
@@ -85,9 +85,9 @@ C# предоставляет прямой способ записи чисел 
 Рассмотрим пример где можно заметить отличия `decimal` от других подобных типов данных:
 
 ```csharp
-    var doubleNumber = 0.1 + 0.2;
-    var decimalNumber = 0.1m + 0.2m;
+var doubleNumber = 0.1 + 0.2;
+var decimalNumber = 0.1m + 0.2m;
 
-    Console.WriteLine(doubleNumber == 0.3);   // Вывод: false
-    Console.WriteLine(decimalNumber == 0.3m); // Вывод: true
+Console.WriteLine(doubleNumber == 0.3);   // Вывод: false
+Console.WriteLine(decimalNumber == 0.3m); // Вывод: true
 ```
