@@ -3,5 +3,4 @@
     * [Числа в памяти компьютера](base/binary.md)
     * [Переменные](base/variables.md)
     * [Условные конструкции](base/conditions.md)
-    * [Итерации](base/iterations.md)
 * [Термины](terms.md)
