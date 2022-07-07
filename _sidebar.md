@@ -7,4 +7,5 @@
 * [Задачи](problems/introduction.md)
     * [Камень, ножницы, бумага](problems/rock_paper_scissors.md)
     * [Степени двойки](problems/powers_of_two.md)
+    * [Слияние отс. массивов](problems/merge_two_sorted.md)
 * [Термины](terms.md)
