@@ -5,6 +5,7 @@
     * [Условные конструкции](base/conditions.md)
     * [Итерации](base/iterations.md)
     * [Массивы](base/arrays.md)
+    * [Фукнции](base/functions.md)
 * [Задачи](problems/introduction.md)
     * [Камень, ножницы, бумага](problems/rock_paper_scissors.md)
     * [Степени двойки](problems/powers_of_two.md)
